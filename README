@@ -1,0 +1,25 @@
+APR-Score is highly efficient and reliable methodology for prediction of aggregation prone regions in protein sequences.The methodology integrates physico-chemical and structural chemical and secondary structural features of amino acids triplets. The purposed methodology is thoroughly validated on the experimentally characterized aggregation forming proteinswith a sizably high accuracy then previously purposed approaches.
+This directory APR-Score in this repository is consist of machine learning based trained models as follows:
+
+1. APR_LR.pkcls
+   Aggregation prone region scoring and identification using logistic regression. This is reported as APR-Score-LR in the manuscript. 
+ 
+2. APR_RF.pkcls
+  Aggregation prone region scoring and identification using random forest. This is reported as APR-Score-FR in the manuscript.
+
+3. APR_SVM.pkcls
+    Aggregation prone region scoring and identification using support vector machine. This is reported as APR-Score-SVM in the manuscript.
+
+4. APR_NN.pkcls
+  Aggregation prone region scoring and identification using neural network. This is reported as APR-Score-NN in the manuscript.
+
+5.APR_GB.pkcls
+  Aggregation prone region scoring and identification using gradient boost. This is reported as APR-Score-GB in the manuscript.
+
+Among the above prediction models, the random forest based trained model performed marginally better than other models.
+
+For questions, suggestions, and remarks, please feel free to contact
+
+Dr. Rahul Kaushik
+rahul.kaushik@tii.ae
+Biotechnology Reseach Center, TII, Abu Dhabi
