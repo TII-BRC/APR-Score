@@ -42,6 +42,13 @@ This directory APR-Score in this repository is consist of machine learning based
  Aggregation prone region scoring and identification using an integrated (stacked) prediction model of APR-Score-LR, APR-Score-RF, APR-Score-SVM, APR-Score-NN, APR-Score-GB. 
  This is reported as APR-Score-Meta in the manuscript.
 
+7. APR-Score.tar.gz
+This file conssist of 
+   (i)   A saple protein sequence file (TEST.fasta)
+   (ii)  Sample input (TEST.tab) for the trained models
+   (iii) Executables to generate sample input file for trained model using a protein sequence 
+         ./APR-Score.exe <>.fasta
+         The output of above command can be saved in a tsv (tab seprated) file and can be used as input to the trained models.
 
 ###### ****** Licensing  ****** ########
 The methodology and applications of APR-Score are protected under provisional U.S. patent application (U.S. Provisional Application No. 63/641,467)
