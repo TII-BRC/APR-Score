@@ -1,0 +1,80 @@
+Welcome to APR-Score, a relaible tool for screening the potential aggregation prone regions in protein sequences! 
+This README file aims to provide you with essential information about the APR-Score, including installation instructions, usage guidelines, and licensing details.
+
+###### ****** Installation  ****** ######
+
+	I. 	Download the installation package from https://github.com/TII-BRC/APR-Score
+	II.	Based on your preference you may select ScikitLearn (for commandline interface) or Orange Datamining (for graphical interface) to run the prediction from trained models. 
+
+###### ****** Usage  ****** ######
+
+APR-Score is designed to identify the potential aggregation prone regions in the protein sequences. 
+
+###### ****** System Requirements  ****** ######
+
+Before running APR-Score, ensure that your system meets the following minimum requirements:
+
+		Operating System: Linux (preferred) or Windows
+		Processor: APR-Score runs with the pretrained models and do not require any high end processor for execution.
+		RAM: For graphic user interface (GUI), user may check the requirements for Orange Datamining.
+		Disk Space: For a protein sequence (length ~ 300 amino acid residues), APR-Score generates a preprocessing and prediction data of about 10-20 Mbs.
+
+####### ****** Repository File Information ****** #########
+APR-Score is highly efficient and reliable methodology for prediction of aggregation prone regions in protein sequences.The methodology integrates physico-chemical and structural chemical and secondary structural features of amino acids triplets. T
+he purposed methodology is thoroughly validated on the experimentally characterized aggregation forming proteinswith a sizably high accuracy then previously purposed approaches.
+This directory APR-Score in this repository is consist of machine learning based trained models as follows:
+1. APR_LR.pkcls
+   Aggregation prone region scoring and identification using logistic regression. This is reported as APR-Score-LR in the manuscript. 
+ 
+2. APR_RF.pkcls
+  Aggregation prone region scoring and identification using random forest. This is reported as APR-Score-RF in the manuscript.
+
+3. APR_SVM.pkcls
+    Aggregation prone region scoring and identification using support vector machine. This is reported as APR-Score-SVM in the manuscript.
+
+4. APR_NN.pkcls
+  Aggregation prone region scoring and identification using neural network. This is reported as APR-Score-NN in the manuscript.
+
+5.APR_GB.pkcls
+  Aggregation prone region scoring and identification using gradient boost. This is reported as APR-Score-GB in the manuscript.
+
+6. APR_Meta.pkcls
+ Aggregation prone region scoring and identification using an integrated (stacked) prediction model of APR-Score-LR, APR-Score-RF, APR-Score-SVM, APR-Score-NN, APR-Score-GB. 
+ This is reported as APR-Score-Meta in the manuscript.
+
+7. APR-Score.tar.gz
+This file conssist of 
+   (i)   A saple protein sequence file (TEST.fasta)
+   (ii)  Sample input (TEST.tab) for the trained models
+   (iii) Executables to generate sample input file for trained model using a protein sequence 
+         ./APR-Score.exe <>.fasta
+         The output of above command can be saved in a tsv (tab seprated) file and can be used as input to the trained models.
+
+###### ****** Licensing  ****** ########
+The methodology and applications of APR-Score are protected under provisional U.S. patent application (U.S. Provisional Application No. 63/641,467)
+By using APR-Score, you agree to adhere to the terms and conditions pertaining to provisional U.S. patent
+
+###### ******** Support ******* #######
+If you encounter any issues or have questions about APR-Score, please reach out to us at rahul.kaushik@tii.ae . We are here to help!
+
+###### ****** About Us ******* ############
+APR-Score is brought to you by Biotechnology Research Center at Technology Innovatioin Institute, Abu Dhabi, UAE. 
+Further information can be accessed at https://www.tii.ae/biotech.
+
+
+####### *********** Disclaimer ******* ############
+APR-Score is provided "as is" without any warranty, express or implied. The developers of APR-Score shall not be held liable for any damages arising from its use.
+
+Thank you for choosing APR-Score! We hope you find it useful and welcome your feedback to help us improve it further.
+
+
+The data underlying this article are available in the article and its online supplementary material. 
+Any additioanl data/codes can be shared on a reasonable request to the corresponding author.
+
+For any question, suggestion, and remark, please feel free to contact
+
+Dr. Rahul Kaushik
+rahul.kaushik@tii.ae
+Biotechnology Reseach Center,
+Technology Innovation Institute, 
+Abu Dhabi, United Arab Emirates
